@@ -31,7 +31,7 @@ jobs:
         server-password: BOS_REPO_SK # env variable for token in deploy
 
     - name: Publish to Apache Maven Central
-      run: mvn clean deploy -P bos-deploy
+      run: mvn clean deploy -P bos-deploy -pl modual1 modual2
       env:
         MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
         MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
