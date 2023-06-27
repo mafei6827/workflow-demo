@@ -4,7 +4,7 @@
 
     <groupId>io.github.mafei6827</groupId>
     <artifactId>workflow-demo</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <modules>
         <module>module1</module>
         <module>module2</module>
