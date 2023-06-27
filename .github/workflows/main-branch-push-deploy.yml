@@ -6,7 +6,7 @@ name: deploy to bos repo
 on:
   push:
     branches:
-      - 'main'
+      - main
 
 jobs:
   publish:
