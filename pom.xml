@@ -179,11 +179,11 @@
             <distributionManagement>
                 <repository>
                     <id>bos-repo</id>
-                    <url>bos://gz.bcebos.com/bifromq-repository/release</url>
+                    <url>${bos.repo.release}</url>
                 </repository>
                 <snapshotRepository>
                     <id>bos-repo</id>
-                    <url>bos://gz.bcebos.com/bifromq-repository/snapshot</url>
+                    <url>${bos.repo.snapshot}</url>
                 </snapshotRepository>
             </distributionManagement>
         </profile>
