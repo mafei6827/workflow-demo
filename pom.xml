@@ -259,9 +259,6 @@
                                         <requireReleaseVersion>
                                             <message>No Snapshot Allowed!</message>
                                         </requireReleaseVersion>
-<!--                                        <requireSnapshotVersion>-->
-<!--                                            <message>No Releases Allowed!</message>-->
-<!--                                        </requireSnapshotVersion>-->
                                     </rules>
                                     <fail>true</fail>
                                 </configuration>
