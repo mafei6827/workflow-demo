@@ -21,7 +21,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Enforce snapshot
-      run: mvn -P bos-deploy-snapshot enforce:enforce --file pom.xml
+      run: mvn -P bos-deploy-snapshot enforcer:enforce --file pom.xml
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
