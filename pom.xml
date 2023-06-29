@@ -254,16 +254,16 @@
                                 <goals>
                                     <goal>enforce</goal>
                                 </goals>
-                                <configuration>
-                                    <rules>
-                                        <requireReleaseVersion>
-                                            <message>No Snapshot Allowed!</message>
-                                        </requireReleaseVersion>
-                                    </rules>
-                                    <fail>true</fail>
-                                </configuration>
                             </execution>
                         </executions>
+                        <configuration>
+                            <rules>
+                                <requireReleaseVersion>
+                                    <message>No Snapshot Allowed!</message>
+                                </requireReleaseVersion>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
