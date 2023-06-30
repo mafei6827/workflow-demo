@@ -36,7 +36,7 @@ jobs:
         server-password: BOS_REPO_SK # env variable for token in deploy
 
     - name: Publish to BoS maven repo
-      run: mvn clean deploy -P bos-deploy-snapshot -pl module1,module2 -am -Dbos.repo.release=$BOS_REPO_RELEASE -Dbos.repo.snapshot=$BOS_REPO_SNAPSHOT
+      run: mvn clean deploy -P bos-deploy-snapshot -pl module1,module2,module5 -am -Dbos.repo.release=$BOS_REPO_RELEASE -Dbos.repo.snapshot=$BOS_REPO_SNAPSHOT
       env:
         MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
         MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
