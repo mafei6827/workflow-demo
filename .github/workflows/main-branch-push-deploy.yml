@@ -21,7 +21,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Enforce snapshot
-      run: mvn enforcer:enforce -Denforcer.rules=requireReleaseVersion -Denforcer.fail=true --file pom.xml
+      run: mvn enforcer:enforce -Denforcer.rules=requireSnapshotVersion -Denforcer.fail=true --file pom.xml
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
